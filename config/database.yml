@@ -16,6 +16,6 @@ production:
   encoding: unicode
   host: localhost 
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  database: sample_production
-  username: sample
-  password: <%= ENV['FashioNXT_PASSWORD'] %>
+  database: fashionxt_production
+  username: fashionxt
+  password: <%= ENV['FASHIONXT_PASSWORD'] %>
