@@ -52,3 +52,8 @@ rails s
 git add . && git commit -m "new"
 git push heroku main
 
+
+heroku run rake db:migrate
+
+heroku ps:scale web=1
+
