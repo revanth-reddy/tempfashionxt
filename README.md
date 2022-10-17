@@ -37,3 +37,18 @@ heroku stack:set heroku-20
 git init && git add . && git commit -m "init"
 heroku create
 git push heroku main
+
+rails g controller Users 
+rails g controller Sessions 
+rails g controller Crms 
+
+rails g model User name:string email:string password:digest
+
+rake db:create 
+rake db:migrate
+
+rails s
+
+git add . && git commit -m "new"
+git push heroku main
+
