@@ -31,3 +31,9 @@ bundle exec rails webpacker:compile
 export NODE_OPTIONS=--openssl-legacy-provider
 bundle exec rails webpacker:compile
 rails server
+unset NODE_OPTIONS  
+heroku stack:set heroku-20
+
+git init && git add . && git commit -m "init"
+heroku create
+git push heroku main
